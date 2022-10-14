@@ -132,7 +132,7 @@ python run_speech_recognition_ctc.py \
 	--dataset_config_name="tr" \
 	--output_dir="./wav2vec2-common_voice-tr-demo" \
 	--overwrite_output_dir \
-	--num_train_epochs="15" \
+	--num_train_epochs="20" \
 	--per_device_train_batch_size="16" \
 	--gradient_accumulation_steps="2" \
 	--learning_rate="3e-4" \
