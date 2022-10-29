@@ -30,6 +30,23 @@ If you want to change for other pre-trained like RoBERTa, don't forget to give t
 adv = Aadapter(adv_K=3, adv_lr=1e-1, adv_init_mag=2e-2, adv_max_norm=1.0, adv_norm_type='l2', base_model='roberta')
 ```
 
+### computation cost
+Memory:
+We use single GPU(NVIDIA GeForce RTX 3090) and 20~22G RAM in our setting. The batch size and sentence length depend on your device.
+Time:
+|   Task   |  Metric  | Training time |
+| -------- | -------- | ------------- |
+|   CoLA   | Matthews corr. | 3 min |
+|   SST-2  | Accuracy | 30 min |
+|   MRPC   | F1/Accuracy | 3 min |
+|   STS-B  | Pearson/Spearman corr. | 4 min 22 sec |
+|   QQP    | Accuracy/F1 | 4 hr 21 min |
+|   MNLI   | Matched acc./Mismatched acc. | 5 hr 46 min |
+|   QNLI   | Accuracy | 1 hr 40 min |
+|   RTE    | Accuracy | 3 min |
+|   WNLI   | Accuracy | 30 sec |
+
+
 ## Automatic Speech Recognition(ASR)
 We also try to extend our work to ASR pre-trained models, such as Wave2vec2.0 and HuBERT.
 In ASR, please use the same environment with *Adversarial Training for NLU*.
