@@ -32,6 +32,7 @@ adv = Aadapter(adv_K=3, adv_lr=1e-1, adv_init_mag=2e-2, adv_max_norm=1.0, adv_no
 
 ### computation cost
 Memory:
+
 We use single GPU(NVIDIA GeForce RTX 3090) and 20~22G RAM in our setting. The batch size and sentence length depend on your device.
 
 Time:
@@ -173,6 +174,7 @@ python run_speech_recognition_ctc.py \
 
 ### Computation cost
 Memory:
+
 We use single GPU(NVIDIA GeForce RTX 3090) and 20~22G RAM in our setting. The batch size depends on your device.
 
 Time:
