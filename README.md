@@ -50,7 +50,8 @@ Time:
 
 ## Automatic Speech Recognition(ASR)
 We also try to extend our work to ASR pre-trained models, such as Wave2vec2.0 and HuBERT.
-In ASR, please use the same environment with *Adversarial Training for NLU*, please install requirements.txt.
+In ASR, please use the same environment with *Adversarial Training for NLU*, please install requirements.txt and replace transformers/trainer.py with our trainer.py.
+
 1. Librispeech
 
 HuBERT
